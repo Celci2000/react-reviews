@@ -1,0 +1,32 @@
+
+.App{
+    display :flex;
+  
+    margin:100px;
+   justify-content: center;
+   align-items: center;
+ 
+
+}
+.main{
+    border:5px solid ;
+    box-sizing: border-box;
+    background-color:pink;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    width :800px;
+    height: 400px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 25px;
+    padding :50px;
+    text-align :center;
+   
+}
+.image{
+     
+height: 150px;   max-width: 100%;
+background-repeat: no-repeat;
+border-radius:50%;
+background-size: contain;
+box-shadow: 4px black;
+}
