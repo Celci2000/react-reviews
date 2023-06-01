@@ -1,6 +1,6 @@
 import React ,{useState} from 'react'
 import reviews from './data.js'
-import {FaChevronLeft, FaChevronRight, FaQuoteRight} from 'react-icons/fa'
+import {FaChevronLeft, FaChevronRight, FaQuoteRight,FaQuoteLeft } from 'react-icons/fa'
 
 import './App.css'
 
@@ -40,7 +40,7 @@ function App() {
     function showRandom(){
       let newIndex= Math.floor(Math.random()*reviews.length)
       console.log(newIndex)
-      if(newIndex==index ){
+      if(newIndex===index ){
      newIndex=index+1
     }
     return setIndex(checkNumber(newIndex))
@@ -51,12 +51,12 @@ return (
       <div className="main">
         
         <img  className="image"src={image} alt={job}/>
-       <FaQuoteRight />
+     
         <h4 className="name">{name}</h4>
         <p className="job">{job}</p>
         
 
-        <p className="info">{text}</p>
+        <p className="info"><FaQuoteLeft />{text}<FaQuoteRight /></p>  
         <div className="back-forth">
         <button className="prevEle" onClick={handlePrev}><FaChevronLeft />
 </button>
